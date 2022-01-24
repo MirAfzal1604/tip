@@ -1,0 +1,97 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    height: 100vh;
+}
+
+body {
+    background: linear-gradient(45deg, #2193b0, #6dd5ed);
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px;
+    background: #fff;
+    box-shadow: 0 0 20px #3b7a88;
+    width: 350px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.inputLabel {
+    position: relative;
+    padding: 20px 0;
+}
+
+input {
+    width: 100%;
+    height: 25px;
+    border: 0;
+    outline: 0;
+    border-bottom: 2px solid #222;
+    font-size: 18px;
+}
+
+input:focus,
+input:valid {
+    border-color: rgb(6, 165, 6);
+}
+
+label {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    transition: all 0.3s;
+}
+
+input:focus~label,
+input:valid~label {
+    top: -3px;
+    font-size: 15px;
+}
+
+.total {
+    padding: 10px 0;
+}
+
+.totaltext {
+    padding: 5px 0;
+}
+
+.button {
+    display: flex;
+}
+
+.btn {
+    border: 0;
+    outline: 0;
+    background: rgb(24, 65, 139);
+    border: 2px solid #fff;
+    color: #fff;
+    width: 50%;
+    height: 40px;
+    font-size: 18px;
+    align-self: center;
+    cursor: pointer;
+    border-radius: 30px;
+}

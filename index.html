@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <title>Tip</title>
+</head>
+
+<body>
+
+    <div class="center">
+        <div class="inputLabel">
+            <input type="number" id="totalBill" required />
+            <label for="totalBill" class="">Total bill</label>
+        </div>
+
+        <div class="inputLabel">
+            <input type="number" id="EachPerson" required />
+            <label for="EachPerson" class="">Number of person</label>
+        </div>
+
+        <div class="total">
+            <p class="totaltext">Tip: <span class="tip"></span></p>
+            <p class="totaltext">Total: <span class="totalMoney"></span></p>
+            <p class="totaltext">Each person pay: <span class="persons"></span></p>
+        </div>
+        <div class="button">
+            <button class="btn" onclick="show()">Count</button>
+            <button class="btn" onclick="reload()">Reload</button>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
